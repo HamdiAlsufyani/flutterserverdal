@@ -9,8 +9,7 @@ const userRouter = require('./routes/user');
 const DBC="mongodb+srv://hss_sa:rM1VhisEpknpcaCb@cluster0.qzwvf6j.mongodb.net/?retryWrites=true&w=majority";
 
 
-const PORT=3020
-
+const PORT = process.env.PORT || 3000;
 const app=express();
 app.use(express.json());
 
